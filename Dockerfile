@@ -21,9 +21,9 @@ RUN cd ~ && git clone https://github.com/mrunal4/certbot \
 
 RUN ln -s /root/planetpython_telegrambot/telebot_start.sh /etc/my_init.d/telebot_start.sh \
     && chmod +x /root/planetpython_telegrambot/telebot_start.sh /etc/my_init.d/telebot_start.sh \
-    ln -s /root/planetpython_telegrambot/allot-ip.sh /etc/my_init.d/allot-ip.sh \
+    && ln -s /root/planetpython_telegrambot/allot-ip.sh /etc/my_init.d/allot-ip.sh \
     && chmod +x /root/planetpython_telegrambot/allot-ip.sh /etc/my_init.d/allot-ip.sh \
-    ln -s /root/planetpython_telegrambot/cert-gen.sh /etc/my_init.d/cert-gen.sh \
+    && ln -s /root/planetpython_telegrambot/cert-gen.sh /etc/my_init.d/cert-gen.sh \
     && chmod +x /root/planetpython_telegrambot/cert-gen.sh /etc/my_init.d/cert-gen.sh \
     && ln -s /root/planetpython_telegrambot/supervisord.conf /etc/supervisord.conf \
     && chmod +x /root/planetpython_telegrambot/supervisord.conf /etc/supervisord.conf

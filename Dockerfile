@@ -27,3 +27,5 @@ RUN ln -s /root/planetpython_telegrambot/telebot_start.sh /etc/my_init.d/telebot
     && chmod +x /root/planetpython_telegrambot/cert-gen.sh /etc/my_init.d/cert-gen.sh \
     && ln -s /root/planetpython_telegrambot/supervisord.conf /etc/supervisord.conf \
     && chmod +x /root/planetpython_telegrambot/supervisord.conf /etc/supervisord.conf
+
+WORKDIR /root/
